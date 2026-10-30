@@ -1,0 +1,6 @@
+{
+  "targets": [
+    {"name": "example-tls", "host": "example.com", "port": 443, "protocol": "https", "path": "/", "timeout": 3},
+    {"name": "example-tcp", "host": "example.com", "port": 443, "protocol": "tcp", "timeout": 3}
+  ]
+}
