@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "network-latency-monitor"
+version = "1.0.0"
+description = "Concurrent TCP and HTTP(S) latency and availability monitoring CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Kasra Nonahal" }]
+dependencies = []
+
+[project.scripts]
+netwatch = "netwatch.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["netwatch*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
